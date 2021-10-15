@@ -11,7 +11,7 @@
         indicators
         background="#ababab"
         img-width="1024"
-        img-height="480"
+        img-height="400"
         style="text-shadow: 1px 1px 2px #333"
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
@@ -44,7 +44,7 @@
             <img
               class="d-block img-fluid w-100"
               width="1024"
-              height="480"
+              height="400"
               src="https://image.shutterstock.com/image-photo/soccer-players-middle-artificial-pitch-600w-771973045.jpg"
               alt="image slot"
             />
@@ -54,10 +54,104 @@
 
       <p class="mt-4">
         Slide #: {{ slide }}<br />
-        Sliding: {{ sliding }}
+        <br />
+        <!-- Sliding: {{ sliding }} -->
       </p>
+      
+    </div>
+    <div class="h2 mb-0">
+      <h2 class="font_1" style="font-size:45px">
+        <span style="color:#3B805A">
+          <span style="font-size:45px">
+            <font face="Bahnschrift">Canchas recomendadas en Bogotá</font>
+          </span>
+        </span>
+      </h2>
+    </div>
+    <div>
+      <span>
+        <font face="Bahnschrift">
+          <p style="border: ridge #0f0fef 1px;">
+            Aquí encontrarás el listado de LAS MEJORES CANCHAS DE FÚTBOL
+          </p>
+        </font>
+      </span>  
+    </div>
+    <!-- <div class="row">
+      <div id="container" class="column mx-5" align="left">
+          <b-img src="https://image.shutterstock.com/image-photo/soccer-players-middle-artificial-pitch-600w-771973045.jpg" fluid alt="Fluid image"></b-img>
+          <span class="font_2" style="font-size:45px">Cancha:</span>
+          <span>
+            <router-link  router-link to="/notas" class="reg mx-2">Regístrate</router-link>
+          </span>
+      </div>
+      <div class="column">
+        <span class="font_2" style="font-size:45px">Cancha:</span>
+      </div>
+    </div> -->
+
+    <div class="row">
+      <div class="column">
+        <b-img src="https://image.shutterstock.com/image-photo/soccer-players-middle-artificial-pitch-600w-771973045.jpg" fluid alt="Fluid image"></b-img>
+      </div>
+      <div class="column" align="left">
+        <br />
+        <span class="font_2" style="font-size:45px">
+          <span style="color:#3B805A">
+            Cancha: 
+          </span>
+        </span>
+        <span class="font_2" style="font-size:45px">
+          <span style="color:#14638c">
+            Zona Centro
+          </span>
+        </span>
+      <div>
+        <span class="font_2" style="font-size:45px">
+          <span style="color:#010101">
+            Ciudad: 
+          </span>
+        </span>
+        <span class="font_2" style="font-size:45px">
+          <span style="color:#14638c">
+            Bogotá
+          </span>
+        </span>
+      </div>
+      <div>
+        <span class="font_2" style="font-size:45px">
+          <span style="color:#010101">
+            Dirección: 
+          </span>
+        </span>
+        <span class="font_2" style="font-size:45px">
+          <span style="color:#14638c">
+            Calle 19 # 11 - 71
+          </span>
+        </span>
+      </div>
+      <div>
+        <span class="font_2" style="font-size:45px">
+          <span style="color:#010101">
+            Teléfono: 
+          </span>
+        </span>
+        <span class="font_2" style="font-size:45px">
+          <span style="color:#14638c">
+            5-55-5555
+          </span>
+        </span>
+      </div>
+        <span style="font-size:45px">
+          <router-link  router-link to="/notas">Regístrate</router-link>
+        </span>
+      </div>
     </div>
 
+
+
+  </div>
+</template>
     <!-- <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
@@ -148,8 +242,6 @@
         >
       </li>
      </ul> -->
-  </div>
-</template>
 
 <script>
 export default {
@@ -190,4 +282,25 @@ li {
 a {
   color: #42b983;
 }
+
+
+*{
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 </style>
